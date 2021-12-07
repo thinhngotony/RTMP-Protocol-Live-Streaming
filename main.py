@@ -383,8 +383,8 @@ class ReadRTMP(object):
 
 
 if __name__ == "__main__":
-    url = "rtmp://139.155.2.91/live/s"
-    live = Live(inputUrl=url, rtmpUrl="rtmp://139.155.2.91/live/L17LTlsVqMNTZyLKMIFSD2x28MlgPJ0SDZVHnHJPxMKi0tWx")
+    url = "test.mp4"
+    live = Live(inputUrl=url, rtmpUrl="rtmp://yourIP/live/")
     live.run()
     # live.read_frame()
     # audio = Audio("test.wav")
