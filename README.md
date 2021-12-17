@@ -59,12 +59,12 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To run these code please do the following steps
+To run this code please do the following steps
 
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* All dependences
+* All dependencies
   ```sh
   pip install -r requirements.txt
   ```
