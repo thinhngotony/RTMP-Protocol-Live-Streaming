@@ -105,7 +105,7 @@ Plan to change resolution in streaming soon!
 <!-- CONTRIBUTING -->
 ## Contributing
 
-You can pull requests and emails me for development 
+You can pull requests and email me for development 
 
 <!-- LICENSE -->
 ## License
