@@ -60,7 +60,7 @@ output_process = (
     .run_async(pipe_stdin=True)
 )
 
-# 添加的视频信息
+# Added video information
 add_path = INPUT
 a_width, a_height, a_avg_frame_rate = get_width_height(add_path)
 add_input = (
@@ -85,7 +85,7 @@ def merge_frame(frame, addFrame, o_width, o_height, scale_rate=0.3, position=[0,
     img1.paste(img2, position)
     return np.asarray(img1)
 
-# # 视频处理.
+# # Video processing.
 while True:
     in_bytes = input_process.stdout.read(width * height * 3)
     if not in_bytes:
@@ -95,14 +95,14 @@ while True:
     frame = frame.copy()
     frame[:, :, 0] = 0
 
-    # 合并视频
+    # Merge video
     add_frame = get_add_frame(add_input, a_width, a_height)
     result_frame = merge_frame(frame, add_frame, width, height)
 
     # output_process.stdin.write(frame.astype(np.uint8).tobytes())
     output_process.stdin.write(result_frame.astype(np.uint8).tobytes())
 
-# # 音频处理
+# # Audio processing
 # while True:
 #     chunk = 1024
 #     in_bytes = input_audio_process.stdout.read(chunk)
